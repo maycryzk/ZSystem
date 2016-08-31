@@ -1,0 +1,9 @@
+[core]
+	bare = true
+	repositoryformatversion = 0
+	filemode = false
+	symlinks = false
+	ignorecase = true
+[remote "ZSystem"]
+	fetch = +refs/heads/*:refs/remotes/ZSystem/*
+	pushurl = https://github.com/maycryzk/ZSystem

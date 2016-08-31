@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="ZSystem"
+  id="myeclipse.1472090823473"
+  context-root="/ZSystem"
+  j2ee-spec="5.0"
+  archive="ZSystem.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+
