@@ -40,14 +40,14 @@ public class DateUtil {
 	 
 	 
 	 public static String getLastMonthDay(String year, String month){
-		 	//格式化日�?
+		 	//格式化日期
 	        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
 		 	Calendar cal = Calendar.getInstance();
 	        cal.set(Calendar.YEAR,Integer.valueOf(year));
 	        cal.set(Calendar.MONTH, Integer.valueOf(month)-1);
-	        //获取某月�?��天数
+	        //获取某月最大天数
 	        int lastDay = cal.getActualMaximum(Calendar.DAY_OF_MONTH);
-	        //设置日历中月份的�?��天数
+	        //设置日历中月份的天数
 	        cal.set(Calendar.DAY_OF_MONTH, lastDay);
 	        String lastDayOfMonth = sdf.format(cal.getTime());
 	        return lastDayOfMonth;
@@ -55,7 +55,7 @@ public class DateUtil {
 	 }
 	 
 	 /**
-	  * 获取当前月第�?��
+	  * 获取当前月第一天
 	  * @return
 	  */
 	 public static String getCurrentMonthFirstDay(){
@@ -67,7 +67,7 @@ public class DateUtil {
          return first;
 	 }
 	 /**
-	  * 获取指定月第�?��
+	  * 获取指定月第一天
 	  * @return
 	  */
 	 public static String getCurrentMonthFirstDay(String time){
@@ -85,7 +85,7 @@ public class DateUtil {
 	 }
 	 
 	 /**
-	  * 获取当前月最后一�?
+	  * 获取当前月最后一天
 	  * @return
 	  */
 	 public static String getCurrentMonthLastDay(){
@@ -96,7 +96,7 @@ public class DateUtil {
 	     return last;
 	 }
 	 /**
-	  * 获取指定月最后一�?
+	  * 获取指定月最后一天
 	  * @return
 	  */
 	 public static String getCurrentMonthLastDay(String time){
